@@ -1,0 +1,7 @@
+appdirs==1.4.3
+Django==3.0.5
+packaging==20.3
+pyparsing==2.4.7
+psycopg2==2.8.5
+requests==2.23.0
+six==1.14.0
