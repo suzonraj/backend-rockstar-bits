@@ -1,13 +1,16 @@
 <!-- templates/registration/login.html -->
-{% extends 'layouts/app.html' %}
+{% extends 'layouts/auth.html' %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Signup{% endblock %}
 
 {% block content %}
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
+    <form method="post" class="form-signin">
+        {% csrf_token %}
+
+        <h1 class="h3 mb-3 font-weight-normal">Create New Account</h1>
+        {{ form.as_p }}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        <a href="{% url 'login' %}" class="btn btn-outline-primary mt-2 btn-block">Already Registered? Login</a>
+        <p class="mt-5 mb-3 text-muted">&copy; PyGithub</p>
+    </form>
 {% endblock %}
