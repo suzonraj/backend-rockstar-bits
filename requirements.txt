@@ -1,5 +1,5 @@
 appdirs==1.4.3
-Django==3.0.5
+Django==3.0.12
 packaging==20.3
 pyparsing==2.4.7
 psycopg2==2.8.5
